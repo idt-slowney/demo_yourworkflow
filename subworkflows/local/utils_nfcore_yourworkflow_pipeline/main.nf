@@ -77,6 +77,15 @@ workflow PIPELINE_INITIALISATION {
     //
     validateInputParameters()
 
+    // Check input path parameters to see if they exist
+    def checkPathParamList = [
+        params.bwa,
+        params.bwamem2,
+        params.fasta_dict,
+        params.fasta,
+        params.fasta_fai,
+    ]
+
     //
     // Create channel from input file provided through params.input
     //
