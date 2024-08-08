@@ -1,0 +1,266 @@
+Aug-08 12:13:56.349 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -params-file /mnt/archive/work/slowney/demo/inputs/demo_params_genome.json -profile poc_base
+Aug-08 12:13:56.480 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.3
+Aug-08 12:13:56.528 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/slowney/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2
+Aug-08 12:13:56.550 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-08 12:13:56.552 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-08 12:13:56.557 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Aug-08 12:13:56.580 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-08 12:13:56.620 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mnt/archive/work/slowney/demo/demo_yourworkflow/nextflow.config
+Aug-08 12:13:56.625 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/archive/work/slowney/demo/demo_yourworkflow/nextflow.config
+Aug-08 12:13:56.678 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/slowney/.nextflow/secrets/store.json
+Aug-08 12:13:56.683 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@51745f40] - activable => nextflow.secret.LocalSecretsProvider@51745f40
+Aug-08 12:13:56.786 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `poc_base`
+Aug-08 12:13:59.263 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [poc_eks, poc_base, poc_slurm, test, test_full]
+Aug-08 12:13:59.341 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Aug-08 12:13:59.385 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [fabulous_ekeblad] DSL2 - revision: 48d7b0b177
+Aug-08 12:13:59.387 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-validation@1.1.3]
+Aug-08 12:13:59.388 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-08 12:13:59.389 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-validation@1.1.3]
+Aug-08 12:13:59.390 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-validation version: 1.1.3
+Aug-08 12:13:59.411 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-validation@1.1.3' resolved
+Aug-08 12:13:59.411 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-validation@1.1.3'
+Aug-08 12:13:59.458 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-validation@1.1.3
+Aug-08 12:13:59.551 [main] DEBUG nextflow.Session - Session UUID: c212874c-cab3-498e-95ec-7bacd6d4f18f
+Aug-08 12:13:59.552 [main] DEBUG nextflow.Session - Run name: fabulous_ekeblad
+Aug-08 12:13:59.554 [main] DEBUG nextflow.Session - Executor pool size: 64
+Aug-08 12:13:59.567 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-08 12:13:59.575 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-08 12:13:59.637 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.3 build 5916
+  Created: 09-07-2024 19:35 UTC (14:35 CDT)
+  System: Linux 4.18.0-513.24.1.el8_9.x86_64
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 17.0.11-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 4150671@CorHPC03 [10.1.22.30]
+  CPUs: 64 - Mem: 251.6 GB (192.1 GB) - Swap: 2 GB (459.9 MB)
+Aug-08 12:13:59.689 [main] DEBUG nextflow.Session - Work-dir: /mnt/archive/work/slowney/demo/demo_yourworkflow/work [nfs]
+Aug-08 12:13:59.690 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/archive/work/slowney/demo/demo_yourworkflow/bin
+Aug-08 12:13:59.709 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-08 12:13:59.723 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Aug-08 12:13:59.812 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-08 12:13:59.830 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 65; maxThreads: 1000
+Aug-08 12:13:59.970 [main] DEBUG nextflow.Session - Session start
+Aug-08 12:13:59.974 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /mnt/archive/work/slowney/demo/outputs/pipeline_info/execution_trace_2024-08-08_12-13-59.txt
+Aug-08 12:14:00.323 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-08 12:14:00.502 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-validation
+Aug-08 12:14:01.292 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-validation
+Aug-08 12:14:01.294 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-validation
+Aug-08 12:14:01.295 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-validation
+Aug-08 12:14:01.300 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-validation
+Aug-08 12:14:01.301 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [fromSamplesheet:fromSamplesheet]; plugin Id: nf-validation
+Aug-08 12:14:03.470 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-validation
+Aug-08 12:14:03.474 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-validation
+Aug-08 12:14:03.475 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-validation
+Aug-08 12:14:03.479 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-validation
+Aug-08 12:14:03.481 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [fromSamplesheet:fromSamplesheet]; plugin Id: nf-validation
+Aug-08 12:14:04.357 [main] DEBUG nextflow.Nextflow - Using schema file: nextflow_schema.json
+Aug-08 12:14:04.360 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `monochromeLogs` -- Initialise it to a default value eg. `params.monochromeLogs = some_value`
+Aug-08 12:14:04.371 [main] INFO  nextflow.Nextflow - 
+
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  demo/yourworkflow v1.0dev[0m
+-[2m----------------------------------------------------[0m-
+[1mCore Nextflow options[0m
+  [0;34mrunName    : [0;32mfabulous_ekeblad[0m
+  [0;34mlaunchDir  : [0;32m/mnt/archive/work/slowney/demo/demo_yourworkflow[0m
+  [0;34mworkDir    : [0;32m/mnt/archive/work/slowney/demo/demo_yourworkflow/work[0m
+  [0;34mprojectDir : [0;32m/mnt/archive/work/slowney/demo/demo_yourworkflow[0m
+  [0;34muserName   : [0;32mslowney[0m
+  [0;34mprofile    : [0;32mpoc_base[0m
+  [0;34mconfigFiles: [0;32m[0m
+
+[1mInput/output options[0m
+  [0;34minput      : [0;32m/mnt/archive/work/slowney/demo/inputs/nfSS_small.csv[0m
+  [0;34moutdir     : [0;32m/mnt/archive/work/slowney/demo/outputs[0m
+
+[1mReference genome options[0m
+  [0;34mgenome     : [0;32mIDT.hg19.local[0m
+  [0;34mfasta      : [0;32m/mnt/archive/work/slowney/Genomes/hg19/hg19_primary.fa[0m
+  [0;34mfasta_dict : [0;32m/mnt/archive/work/slowney/Genomes/hg19/hg19_primary.dict[0m
+  [0;34mfasta_fai  : [0;32m/mnt/archive/work/slowney/Genomes/hg19/hg19_primary.fa.fai[0m
+  [0;34mbwamem2    : [0;32m/mnt/archive/work/slowney/Genomes/hg19[0m
+
+[1mOther parameters[0m
+  [0;34msave_all   : [0;32mtrue[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+If you use demo/yourworkflow for your analysis please cite:
+
+* The pipeline
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/demo/yourworkflow/blob/master/CITATIONS.md
+-[2m----------------------------------------------------[0m-
+Aug-08 12:14:04.374 [main] DEBUG nextflow.validation.SchemaValidator - Starting parameters validation
+Aug-08 12:14:04.595 [main] DEBUG nextflow.validation.SchemaValidator - Starting validation: 'input': '/mnt/archive/work/slowney/demo/inputs/nfSS_small.csv' with 'assets/schema_input.json'
+Aug-08 12:14:04.655 [main] DEBUG nextflow.validation.SchemaValidator - Validation passed: 'input': '/mnt/archive/work/slowney/demo/inputs/nfSS_small.csv' with 'assets/schema_input.json'
+Aug-08 12:14:04.655 [main] DEBUG nextflow.validation.SchemaValidator - Finishing parameters validation
+Aug-08 12:14:04.661 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `bwa` -- Initialise it to a default value eg. `params.bwa = some_value`
+Aug-08 12:14:04.661 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `bwamem2` -- Initialise it to a default value eg. `params.bwamem2 = some_value`
+Aug-08 12:14:04.662 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `fasta_dict` -- Initialise it to a default value eg. `params.fasta_dict = some_value`
+Aug-08 12:14:04.664 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `fasta` -- Initialise it to a default value eg. `params.fasta = some_value`
+Aug-08 12:14:04.665 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `fasta_fai` -- Initialise it to a default value eg. `params.fasta_fai = some_value`
+Aug-08 12:14:04.668 [main] DEBUG nextflow.validation.SchemaValidator - Starting validation: '/mnt/archive/work/slowney/demo/inputs/nfSS_small.csv' with 'assets/schema_input.json'
+Aug-08 12:14:04.673 [main] DEBUG nextflow.validation.SchemaValidator - Validation passed: '/mnt/archive/work/slowney/demo/inputs/nfSS_small.csv' with 'assets/schema_input.json'
+Aug-08 12:14:04.792 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high,sentieon` for process with name DEMO_YOURWORKFLOW:PREPREFERENCEGENOME:SENTIEON_BWAINDEX
+Aug-08 12:14:04.796 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SENTIEON_BWAINDEX` matches process DEMO_YOURWORKFLOW:PREPREFERENCEGENOME:SENTIEON_BWAINDEX
+Aug-08 12:14:04.814 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 12:14:04.814 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 12:14:04.824 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Aug-08 12:14:04.833 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=64; memory=251.6 GB; capacity=64; pollInterval=100ms; dumpInterval=5m
+Aug-08 12:14:04.837 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Aug-08 12:14:04.918 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name DEMO_YOURWORKFLOW:PREPREFERENCEGENOME:BWAMEM2_INDEX
+Aug-08 12:14:04.919 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BWAMEM2_INDEX` matches process DEMO_YOURWORKFLOW:PREPREFERENCEGENOME:BWAMEM2_INDEX
+Aug-08 12:14:04.923 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 12:14:04.924 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 12:14:04.941 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name DEMO_YOURWORKFLOW:PREPREFERENCEGENOME:SAMTOOLS_FAIDX
+Aug-08 12:14:04.942 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMTOOLS_FAIDX` matches process DEMO_YOURWORKFLOW:PREPREFERENCEGENOME:SAMTOOLS_FAIDX
+Aug-08 12:14:04.948 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 12:14:04.949 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 12:14:04.962 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name DEMO_YOURWORKFLOW:PREPREFERENCEGENOME:PICARD_CREATESEQUENCEDICTIONARY
+Aug-08 12:14:04.963 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PICARD_CREATESEQUENCEDICTIONARY` matches process DEMO_YOURWORKFLOW:PREPREFERENCEGENOME:PICARD_CREATESEQUENCEDICTIONARY
+Aug-08 12:14:04.968 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 12:14:04.968 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 12:14:05.037 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:PreprocessFASTQC
+Aug-08 12:14:05.047 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 12:14:05.047 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 12:14:05.078 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:SEQTK_SAMPLE
+Aug-08 12:14:05.079 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SEQTK_SAMPLE` matches process DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:SEQTK_SAMPLE
+Aug-08 12:14:05.083 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 12:14:05.084 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 12:14:05.110 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:TRIMGALORE
+Aug-08 12:14:05.111 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:TRIMGALORE` matches process DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:TRIMGALORE
+Aug-08 12:14:05.117 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 12:14:05.117 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 12:14:05.145 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:PostprocessFASTQC
+Aug-08 12:14:05.149 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 12:14:05.150 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 12:14:05.182 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:BWAMEM2_MEM
+Aug-08 12:14:05.183 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BWAMEM2_MEM` matches process DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:BWAMEM2_MEM
+Aug-08 12:14:05.188 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 12:14:05.188 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 12:14:05.207 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:PICARD_MARKDUPLICATES
+Aug-08 12:14:05.209 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PICARD_MARKDUPLICATES` matches process DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:PICARD_MARKDUPLICATES
+Aug-08 12:14:05.214 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 12:14:05.214 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 12:14:05.250 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name DEMO_YOURWORKFLOW:YOURWORKFLOW:VARDICTJAVA
+Aug-08 12:14:05.254 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 12:14:05.254 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 12:14:05.386 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name DEMO_YOURWORKFLOW:YOURWORKFLOW:MULTIQC
+Aug-08 12:14:05.388 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MULTIQC` matches process DEMO_YOURWORKFLOW:YOURWORKFLOW:MULTIQC
+Aug-08 12:14:05.391 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 12:14:05.391 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 12:14:05.408 [main] DEBUG nextflow.Session - Config process names validation disabled as requested
+Aug-08 12:14:05.410 [main] DEBUG nextflow.Session - Igniting dataflow network (40)
+Aug-08 12:14:05.418 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEMO_YOURWORKFLOW:PREPREFERENCEGENOME:SENTIEON_BWAINDEX
+Aug-08 12:14:05.419 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEMO_YOURWORKFLOW:PREPREFERENCEGENOME:BWAMEM2_INDEX
+Aug-08 12:14:05.420 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEMO_YOURWORKFLOW:PREPREFERENCEGENOME:SAMTOOLS_FAIDX
+Aug-08 12:14:05.421 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEMO_YOURWORKFLOW:PREPREFERENCEGENOME:PICARD_CREATESEQUENCEDICTIONARY
+Aug-08 12:14:05.422 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:PreprocessFASTQC
+Aug-08 12:14:05.423 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:SEQTK_SAMPLE
+Aug-08 12:14:05.424 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:TRIMGALORE
+Aug-08 12:14:05.425 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:PostprocessFASTQC
+Aug-08 12:14:05.426 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:BWAMEM2_MEM
+Aug-08 12:14:05.426 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:PICARD_MARKDUPLICATES
+Aug-08 12:14:05.427 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEMO_YOURWORKFLOW:YOURWORKFLOW:VARDICTJAVA
+Aug-08 12:14:05.429 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DEMO_YOURWORKFLOW:YOURWORKFLOW:MULTIQC
+Aug-08 12:14:05.430 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_d6715a92b793b124: /mnt/archive/work/slowney/demo/demo_yourworkflow/./subworkflows/idt/prepreferencegenome/../../../modules/idt/bwamem2/index/main.nf
+  Script_78a38f6af741a872: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/processfastq/../../../modules/idt/seqtk/sample/main.nf
+  Script_3e03cdfc36e5692f: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/alignreads/main.nf
+  Script_99b5bd9161e4fa8b: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/yourworkflow.nf
+  Script_9a9735536805ee91: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/nf-core/utils_nfcore_pipeline/main.nf
+  Script_b823dc8bc390700a: /mnt/archive/work/slowney/demo/demo_yourworkflow/./subworkflows/idt/prepreferencegenome/../../../modules/idt/sentieon/bwaindex/main.nf
+  Script_fb4516a45aa8e76e: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/alignreads/../../../modules/idt/picard/sortsam/main.nf
+  Script_83b74696d5889565: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/alignreads/../../../modules/idt/picard/markduplicates/main.nf
+  Script_90ee3e01291da6b4: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../modules/nf-core/vardictjava/main.nf
+  Script_34a6e65ee7dbdbe0: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/local/utils_nfcore_yourworkflow_pipeline/../../nf-core/utils_nextflow_pipeline/main.nf
+  Script_a0ac5529f4cefc6c: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/processfastq/../../../modules/idt/cutadapt/extractumi/main.nf
+  Script_00c73eee2fceb48c: /mnt/archive/work/slowney/demo/demo_yourworkflow/./subworkflows/idt/prepreferencegenome/main.nf
+  Script_a7d371fe23db7aab: /mnt/archive/work/slowney/demo/demo_yourworkflow/./subworkflows/local/utils_nfcore_yourworkflow_pipeline/../../nf-core/utils_nfvalidation_plugin/main.nf
+  Script_ccfc074ce1216f8c: /mnt/archive/work/slowney/demo/demo_yourworkflow/./subworkflows/idt/prepreferencegenome/../../../modules/idt/samtools/faidx/main.nf
+  Script_ca3483cfbba7127f: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/processfastq/../../../modules/idt/fastqc/main.nf
+  Script_90fc926e0915948b: /mnt/archive/work/slowney/demo/demo_yourworkflow/main.nf
+  Script_8c5ab2a06c1905d8: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/processfastq/../../../modules/idt/trimgalore/main.nf
+  Script_11299cb12a111d0f: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../modules/nf-core/multiqc/main.nf
+  Script_174d8d2cd26c4030: /mnt/archive/work/slowney/demo/demo_yourworkflow/./subworkflows/idt/prepreferencegenome/../../../modules/idt/picard/createsequencedictionary/main.nf
+  Script_8e348777fcec4118: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/alignreads/../../../modules/idt/bwamem2/mem/main.nf
+  Script_a9c3a13db5a5fab9: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/alignreads/../../../modules/idt/sentieon/bwamem/main.nf
+  Script_59dd62a17d966966: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/local/utils_nfcore_yourworkflow_pipeline/main.nf
+  Script_9d0bb111b1baaf0b: /mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/processfastq/main.nf
+Aug-08 12:14:05.430 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Aug-08 12:14:05.430 [main] DEBUG nextflow.Session - Session await
+Aug-08 12:14:05.585 [Actor Thread 56] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/processfastq/../../../modules/idt/fastqc/environment.yml; path=/mnt/archive/work/slowney/nf-components-demo/fastqc-a3039ef8f770a2096c89b9328aeb1e3f
+Aug-08 12:14:05.586 [Actor Thread 47] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/processfastq/../../../modules/idt/seqtk/sample/environment.yml; path=/mnt/archive/work/slowney/nf-components-demo/seqtk_sample-8a3c649f661548391404e5b621f07e2e
+Aug-08 12:14:05.673 [Actor Thread 60] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.002 s; external sort time: 0.015 s; total time: 0.017 s
+Aug-08 12:14:05.673 [Actor Thread 57] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.002 s; external sort time: 0.015 s; total time: 0.017 s
+Aug-08 12:14:05.673 [Actor Thread 54] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.002 s; external sort time: 0.015 s; total time: 0.017 s
+Aug-08 12:14:05.703 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-08 12:14:05.707 [Task submitter] INFO  nextflow.Session - [f4/49c6fd] Submitted process > DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:PreprocessFASTQC (test_sample1)
+Aug-08 12:14:05.712 [Actor Thread 54] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /mnt/archive/work/slowney/demo/demo_yourworkflow/work/collect-file/1e2d5976ed21c0f01574c3ec13727fd6
+Aug-08 12:14:05.712 [Actor Thread 60] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /mnt/archive/work/slowney/demo/demo_yourworkflow/work/collect-file/615027fdfeaca0967413d16f8729de28
+Aug-08 12:14:05.713 [Actor Thread 57] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /mnt/archive/work/slowney/demo/demo_yourworkflow/work/collect-file/05dde34279530b0d8d14006da51e1e93
+Aug-08 12:14:05.724 [Actor Thread 54] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-3027865789996156770
+Aug-08 12:14:05.724 [Actor Thread 57] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-2361419484617666251
+Aug-08 12:14:05.724 [Actor Thread 60] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-15846627153956603248
+Aug-08 12:14:05.725 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-08 12:14:05.726 [Task submitter] INFO  nextflow.Session - [de/f5247a] Submitted process > DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:SEQTK_SAMPLE (test_sample1)
+Aug-08 12:14:05.732 [Actor Thread 57] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../modules/nf-core/multiqc/environment.yml; path=/mnt/archive/work/slowney/nf-components-demo/multiqc-3c79c19229373363894cae5853672dde
+Aug-08 12:14:05.756 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-08 12:14:05.757 [Task submitter] INFO  nextflow.Session - [9f/9db341] Submitted process > DEMO_YOURWORKFLOW:YOURWORKFLOW:MULTIQC
+Aug-08 12:14:09.195 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:SEQTK_SAMPLE (test_sample1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/archive/work/slowney/demo/demo_yourworkflow/work/de/f5247a729ff621a0d136789da7bd9d]
+Aug-08 12:14:09.196 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-08 12:14:09.245 [Actor Thread 55] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/processfastq/../../../modules/idt/trimgalore/environment.yml; path=/mnt/archive/work/slowney/nf-components-demo/trimgalore-3d3b5331bf1527f66980feef981e170e
+Aug-08 12:14:09.254 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=192; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-08 12:14:09.266 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-08 12:14:09.266 [Task submitter] INFO  nextflow.Session - [9f/8bd027] Submitted process > DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:TRIMGALORE (test_sample1)
+Aug-08 12:14:12.969 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: DEMO_YOURWORKFLOW:YOURWORKFLOW:MULTIQC; status: COMPLETED; exit: 0; error: -; workDir: /mnt/archive/work/slowney/demo/demo_yourworkflow/work/9f/9db34184595f99509f2baae39ac854]
+Aug-08 12:14:14.247 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:PreprocessFASTQC (test_sample1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/archive/work/slowney/demo/demo_yourworkflow/work/f4/49c6fd9cadd9f4cfd40faa546e554d]
+Aug-08 12:14:14.847 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:TRIMGALORE (test_sample1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/archive/work/slowney/demo/demo_yourworkflow/work/9f/8bd027c79368ec1e56a63b148c092b]
+Aug-08 12:14:14.961 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Process DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:TRIMGALORE > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+Aug-08 12:14:14.961 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Process DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:TRIMGALORE > Skipping output binding because one or more optional files are missing: fileoutparam<3:1>
+Aug-08 12:14:14.963 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Process DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:TRIMGALORE > Skipping output binding because one or more optional files are missing: fileoutparam<4:1>
+Aug-08 12:14:14.985 [Actor Thread 60] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/alignreads/../../../modules/idt/bwamem2/mem/environment.yml; path=/mnt/archive/work/slowney/nf-components-demo/bwamem2_mem-a6424082e434be907c8412dd32a03c23
+Aug-08 12:14:15.013 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-08 12:14:15.014 [Task submitter] INFO  nextflow.Session - [ae/0802b7] Submitted process > DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:PostprocessFASTQC (test_sample1)
+Aug-08 12:14:15.029 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-08 12:14:15.029 [Task submitter] INFO  nextflow.Session - [b2/132549] Submitted process > DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:BWAMEM2_MEM (test_sample1)
+Aug-08 12:14:18.947 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: DEMO_YOURWORKFLOW:YOURWORKFLOW:PROCESSFASTQ:PostprocessFASTQC (test_sample1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/archive/work/slowney/demo/demo_yourworkflow/work/ae/0802b70c0d5d1bfb55a31a7d07c5be]
+Aug-08 12:14:44.161 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:BWAMEM2_MEM (test_sample1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/archive/work/slowney/demo/demo_yourworkflow/work/b2/1325493c3145d87cae4554dfad52a8]
+Aug-08 12:14:44.177 [TaskFinalizer-6] DEBUG nextflow.processor.TaskProcessor - Process DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:BWAMEM2_MEM > Skipping output binding because one or more optional files are missing: fileoutparam<0:1>
+Aug-08 12:14:44.178 [TaskFinalizer-6] DEBUG nextflow.processor.TaskProcessor - Process DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:BWAMEM2_MEM > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+Aug-08 12:14:44.180 [TaskFinalizer-6] DEBUG nextflow.processor.TaskProcessor - Process DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:BWAMEM2_MEM > Skipping output binding because one or more optional files are missing: fileoutparam<3:1>
+Aug-08 12:14:44.181 [TaskFinalizer-6] DEBUG nextflow.processor.TaskProcessor - Process DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:BWAMEM2_MEM > Skipping output binding because one or more optional files are missing: fileoutparam<4:1>
+Aug-08 12:14:44.195 [Actor Thread 60] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../subworkflows/idt/alignreads/../../../modules/idt/picard/markduplicates/environment.yml; path=/mnt/archive/work/slowney/nf-components-demo/picard_markduplicates-b9af3ca82fd7806a10cdbbeca450e390
+Aug-08 12:14:44.218 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-08 12:14:44.218 [Task submitter] INFO  nextflow.Session - [09/da9765] Submitted process > DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:PICARD_MARKDUPLICATES (test_sample1)
+Aug-08 12:14:58.513 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:PICARD_MARKDUPLICATES (test_sample1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/archive/work/slowney/demo/demo_yourworkflow/work/09/da9765e0380bd57a23f8d987269502]
+Aug-08 12:14:58.528 [TaskFinalizer-7] DEBUG nextflow.processor.TaskProcessor - Process DEMO_YOURWORKFLOW:YOURWORKFLOW:ALIGNREADS:PICARD_MARKDUPLICATES > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+Aug-08 12:14:58.558 [Actor Thread 55] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/mnt/archive/work/slowney/demo/demo_yourworkflow/./workflows/../modules/nf-core/vardictjava/environment.yml; path=/mnt/archive/work/slowney/nf-components-demo/vardictjava-e1e287fe12bd6f9ce2f33ae0491f4589
+Aug-08 12:14:58.582 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-08 12:14:58.582 [Task submitter] INFO  nextflow.Session - [e2/17ce44] Submitted process > DEMO_YOURWORKFLOW:YOURWORKFLOW:VARDICTJAVA (test_sample1)
+Aug-08 12:15:51.881 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: DEMO_YOURWORKFLOW:YOURWORKFLOW:VARDICTJAVA (test_sample1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/archive/work/slowney/demo/demo_yourworkflow/work/e2/17ce446fcaf30e257c5d4f127eaef6]
+Aug-08 12:15:51.896 [main] DEBUG nextflow.Session - Session await > all processes finished
+Aug-08 12:15:51.982 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Aug-08 12:15:51.982 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Aug-08 12:15:51.988 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Aug-08 12:15:51.989 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Aug-08 12:15:52.024 [main] INFO  nextflow.Nextflow - -[0;35m[demo/yourworkflow][0;32m Pipeline completed successfully[0m-
+Aug-08 12:15:52.032 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=8; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=16m 28s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=19; peakMemory=114 GB; ]
+Aug-08 12:15:52.032 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Aug-08 12:15:52.036 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Aug-08 12:15:52.957 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Aug-08 12:15:53.274 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Aug-08 12:15:53.305 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-validation@1.1.3'
+Aug-08 12:15:53.306 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-validation
+Aug-08 12:15:53.308 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Aug-08 12:15:53.310 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

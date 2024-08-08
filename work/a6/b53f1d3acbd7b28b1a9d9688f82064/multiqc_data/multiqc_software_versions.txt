@@ -1,0 +1,9 @@
+Sample	bwamem2	samtools	picard	fastqc	seqtk	trimgalore	cutadapt	vardict-java	var2vcf_valid.pl	demo/yourworkflow	Nextflow
+BWAMEM2_MEM	2.2.1	1.19.2									
+PICARD_MARKDUPLICATES			3.2.0-1-g3948afb6b								
+PostprocessFASTQC				0.12.1							
+PreprocessFASTQC				0.12.1							
+SEQTK_SAMPLE					1.4.post122						
+TRIMGALORE						0.6.7	3.4				
+VARDICTJAVA								1.8.3	1.8.2		
+Workflow										1.0.dev0	24.4.3

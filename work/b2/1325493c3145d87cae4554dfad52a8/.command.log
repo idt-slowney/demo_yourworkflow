@@ -1,0 +1,93 @@
+CorHPC03
+Looking to launch executable "/mnt/archive/work/slowney/nf-components-demo/bwamem2_mem-a6424082e434be907c8412dd32a03c23/bin/bwa-mem2.avx2", simd = .avx2
+Launching executable "/mnt/archive/work/slowney/nf-components-demo/bwamem2_mem-a6424082e434be907c8412dd32a03c23/bin/bwa-mem2.avx2"
+-----------------------------
+Executing in AVX2 mode!!
+-----------------------------
+* SA compression enabled with xfactor: 8
+* Ref file: ./hg19/hg19_primary.fa
+* Entering FMI_search
+* Index file found. Loading index from ./hg19/hg19_primary.fa.bwt.2bit.64
+* Reference seq len for bi-index = 6274322529
+* sentinel-index: 2667469593
+* Count:
+0,	1
+1,	1830943845
+2,	3137161265
+3,	4443378685
+4,	6274322529
+
+* Reading other elements of the index from files ./hg19/hg19_primary.fa
+* Index prefix: ./hg19/hg19_primary.fa
+* Read 0 ALT contigs
+* Done reading Index!!
+* Reading reference genome..
+* Binary seq file = ./hg19/hg19_primary.fa.0123
+* Reference genome size: 6274322528 bp
+* Done reading reference genome !!
+
+------------------------------------------
+1. Memory pre-allocation for Chaining: 1393.3971 MB
+2. Memory pre-allocation for BSW: 1916.9362 MB
+3. Memory pre-allocation for BWT: 618.5134 MB
+------------------------------------------
+* Threads used (compute): 8
+* No. of pipeline threads: 2
+
+[0000] read_chunk: 100000000, work_chunk_size: 1428296, nseq: 9990
+	[0000][ M::kt_pipeline] read 9990 sequences (1428296 bp)...
+[0000] Calling mem_process_seqs.., task: 0
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 100000000, work_chunk_size: 0, nseq: 0
+[0000] 2. Calling kt_for - worker_aln
+[0000] Inferring insert size distribution of PE reads from data, l_pac: 3137161264, n: 9990
+[0000][PE] # candidate unique pairs for (FF, FR, RF, RR): (0, 4279, 0, 0)
+[0000][PE] skip orientation FF as there are not enough pairs
+[0000][PE] analyzing insert size distribution for orientation FR...
+[0000][PE] (25, 50, 75) percentile: (127, 160, 204)
+[0000][PE] low and high boundaries for computing mean and std.dev: (1, 358)
+[0000][PE] mean and std.dev: (169.23, 57.22)
+[0000][PE] low and high boundaries for proper pairs: (1, 435)
+[0000][PE] skip orientation RF as there are not enough pairs
+[0000][PE] skip orientation RR as there are not enough pairs
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 9990 reads in 4.231 CPU sec, 0.636 real sec
+[0000] read_chunk: 100000000, work_chunk_size: 0, nseq: 0
+[0000] Computation ends..
+No. of OMP threads: 8
+Processor is running @2095.275220 MHz
+Runtime profile:
+
+	Time taken for main_mem function: 25.62 sec
+
+	IO times (sec) :
+	Reading IO time (reads) avg: 0.03, (0.03, 0.03)
+	Writing IO time (SAM) avg: 0.01, (0.01, 0.01)
+	Reading IO time (Reference Genome) avg: 9.63, (9.63, 9.63)
+	Index read time avg: 13.71, (13.71, 13.71)
+
+	Overall time (sec) (Excluding Index reading time):
+	PROCESS() (Total compute time + (read + SAM) IO time) : 0.68
+	MEM_PROCESS_SEQ() (Total compute time (Kernel + SAM)), avg: 0.64, (0.64, 0.64)
+
+	 SAM Processing time (sec):
+	--WORKER_SAM avg: 0.04, (0.04, 0.04)
+
+	Kernels' compute time (sec):
+	Total kernel (smem+sal+bsw) time avg: 0.59, (0.59, 0.59)
+		SMEM compute avg: 0.45, (0.47, 0.43)
+		SAL compute avg: 0.07, (0.08, 0.07)
+				MEM_SA avg: 0.06, (0.07, 0.06)
+
+		BSW time, avg: 0.04, (0.05, 0.03)
+
+Important parameter settings: 
+	BATCH_SIZE: 512
+	MAX_SEQ_LEN_REF: 256
+	MAX_SEQ_LEN_QER: 128
+	MAX_SEQ_LEN8: 128
+	SEEDS_PER_READ: 500
+	SIMD_WIDTH8 X: 32
+	SIMD_WIDTH16 X: 16
+	AVG_SEEDS_PER_READ: 64
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...

@@ -1,0 +1,12 @@
+
+  /// MultiQC 🔍 | v1.21
+
+|           multiqc | MultiQC Version v1.23 now available!
+|           multiqc | Search path : /mnt/archive/work/slowney/demo/demo_yourworkflow/work/9f/9db34184595f99509f2baae39ac854
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 11/11  
+|    custom_content | demo-yourworkflow-methods-description: Found 1 sample (html)
+|    custom_content | demo-yourworkflow-summary: Found 1 sample (html)
+|           multiqc | Report      : multiqc_report.html
+|           multiqc | Data        : multiqc_data
+|           multiqc | Plots       : multiqc_plots
+|           multiqc | MultiQC complete

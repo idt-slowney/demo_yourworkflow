@@ -1,0 +1,33 @@
+id: 'demo-yourworkflow-summary'
+description: ' - this information is collected when the pipeline is started.'
+section_name: 'demo/yourworkflow Workflow Summary'
+section_href: 'https://github.com/demo/yourworkflow'
+plot_type: 'html'
+data: |
+    <p style="font-size:110%"><b>Core Nextflow options</b></p>
+    <dl class="dl-horizontal">
+        <dt>runName</dt><dd><samp>fabulous_ekeblad</samp></dd>
+        <dt>launchDir</dt><dd><samp>/mnt/archive/work/slowney/demo/demo_yourworkflow</samp></dd>
+        <dt>workDir</dt><dd><samp>/mnt/archive/work/slowney/demo/demo_yourworkflow/work</samp></dd>
+        <dt>projectDir</dt><dd><samp>/mnt/archive/work/slowney/demo/demo_yourworkflow</samp></dd>
+        <dt>userName</dt><dd><samp>slowney</samp></dd>
+        <dt>profile</dt><dd><samp>poc_base</samp></dd>
+        <dt>configFiles</dt><dd><samp><span style="color:#999999;">N/A</a></samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Input/output options</b></p>
+    <dl class="dl-horizontal">
+        <dt>input</dt><dd><samp>/mnt/archive/work/slowney/demo/inputs/nfSS_small.csv</samp></dd>
+        <dt>outdir</dt><dd><samp>/mnt/archive/work/slowney/demo/outputs</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Reference genome options</b></p>
+    <dl class="dl-horizontal">
+        <dt>genome</dt><dd><samp>IDT.hg19.local</samp></dd>
+        <dt>fasta</dt><dd><samp>/mnt/archive/work/slowney/Genomes/hg19/hg19_primary.fa</samp></dd>
+        <dt>fasta_dict</dt><dd><samp>/mnt/archive/work/slowney/Genomes/hg19/hg19_primary.dict</samp></dd>
+        <dt>fasta_fai</dt><dd><samp>/mnt/archive/work/slowney/Genomes/hg19/hg19_primary.fa.fai</samp></dd>
+        <dt>bwamem2</dt><dd><samp>/mnt/archive/work/slowney/Genomes/hg19</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Other parameters</b></p>
+    <dl class="dl-horizontal">
+        <dt>save_all</dt><dd><samp>true</samp></dd>
+    </dl>

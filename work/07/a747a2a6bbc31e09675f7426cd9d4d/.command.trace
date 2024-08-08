@@ -1,0 +1,17 @@
+nextflow.trace/v2
+realtime=1010
+%cpu=1012
+cpu_model=Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+rchar=18577636
+wchar=4017787
+syscr=2352
+syscw=830
+read_bytes=0
+write_bytes=835584
+%mem=0
+vmem=42756
+rss=11308
+peak_vmem=42804
+peak_rss=11308
+vol_ctxt=20
+inv_ctxt=0

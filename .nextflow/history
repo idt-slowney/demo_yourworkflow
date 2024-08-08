@@ -1,0 +1,2 @@
+2024-08-08 12:13:59	1m 54s	fabulous_ekeblad	OK	48d7b0b177aeb9868918f12f60d5a5c2	c212874c-cab3-498e-95ec-7bacd6d4f18f	nextflow run main.nf -params-file /mnt/archive/work/slowney/demo/inputs/demo_params_genome.json -profile poc_base
+2024-08-08 12:18:23	1m 35s	peaceful_mestorf	OK	48d7b0b177aeb9868918f12f60d5a5c2	c7ccb29e-b837-437c-a86a-524239031ef6	nextflow run main.nf -params-file /mnt/archive/work/slowney/demo/inputs/demo_params_genome.json -profile poc_base
