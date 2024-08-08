@@ -88,6 +88,7 @@ workflow YOURWORKFLOW {
     ch_multiqc_config = params.multiqc_config ?
         Channel.fromPath(params.multiqc_config, checkIfExists: true) :
         Channel.empty()
+    ch_multiqc_custom_config = Channel.empty()
     ch_multiqc_logo          = params.multiqc_logo ?
         Channel.fromPath(params.multiqc_logo, checkIfExists: true) :
         Channel.empty()
