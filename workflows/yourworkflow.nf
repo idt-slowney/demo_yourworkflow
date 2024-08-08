@@ -55,7 +55,7 @@ workflow YOURWORKFLOW {
 
     // Vardict Module
     varCallIn_ch = ALIGNREADS.out.dupmarked_bams
-                        .map{meta, bam, bai -> [meta, bam, bai, "/mnt/archive/work/slowney/Genomes/beds/Exome_Exomev2_Targets.bed"]}
+                        .map{meta, bam, bai -> [meta, bam, bai, "s3://platform-poc-scratch/Test-Data/SampleBed/Exome_Exomev2_Targets.bed"]}
 
     VARDICTJAVA(varCallIn_ch, fasta, fasta_fai)
 
